@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Save links to websites">
+  <meta name="author" content="Eric Hyatt">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>Java Script Bookmarker</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/narrow_style.css" rel="stylesheet">
+
+</head>
+
+<body onload="fetchBookmarks()">
+  <div class="container">
+    <div calss="header clearfix">
+      <h1 class="display-3">Bookmarker</h1>
+      <h2>Bookmark your favorite sites</h2>
+    </div>
+
+    <div class="jumbotron">
+      <form id="myForm">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+        </div>
+
+        <div class="form-group">
+          <label>Site URl</label>
+          <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Submit &raquo;</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="row marketing">
+      <div class="col-lg-12">
+        <div id="bookmarksResults"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+    <p>&copy; Gumbopot Inc. 2019</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
